@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context=".AdminHomeActivity">
+
+
+    <TextView
+        android:id="@+id/adminPanelText"
+        android:layout_width="123dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="60dp"
+        android:text="Admin Panel"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#6B4730"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/adminName"
+        android:layout_width="237dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="60dp"
+        android:text="Admin name"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#6B4730"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAdminLogout"
+        android:layout_width="105dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#EBC07D"
+        android:text="logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createNewTaskButton"
+        android:layout_width="257dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#674630"
+        android:text="Create New Task"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminName" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/allUsersButton"
+        android:layout_width="257dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#674630"
+        android:text="All users"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createNewTaskButton" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/reviewButton"
+        android:layout_width="257dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#674630"
+        android:text="Review Tasks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/allUsersButton" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/allTasksButton"
+        android:layout_width="257dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#674630"
+        android:text="All Tasks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reviewButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

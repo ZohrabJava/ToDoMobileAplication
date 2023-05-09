@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/comment"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="390dp"
+        android:layout_height="230dp"
+        android:text="Comment"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/reject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginLeft="0dp"
+        android:backgroundTint="#EBC07D"
+        android:text="Reject"
+        android:textAllCaps="false"
+        android:layout_marginRight="100dp"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Done"
+        android:layout_marginTop="-50dp"
+        android:backgroundTint="#EBC07D"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

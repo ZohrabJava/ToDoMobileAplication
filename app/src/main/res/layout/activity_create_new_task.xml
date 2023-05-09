@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context=".CreateNewTaskActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createTaskGoBack"
+        android:layout_width="107dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#EBC07D"
+        android:text="go back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createTaskLogout"
+        android:layout_width="107dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#EBC07D"
+        android:text="logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerTask"
+        android:layout_width="143dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#EBC07D"
+        android:text="create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <TextView
+        android:id="@+id/createNewTaskText"
+        android:layout_width="294dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="56dp"
+        android:text="Create New Task"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#6B4730"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/taskSelectidUserText"
+        android:layout_width="134dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="192dp"
+        android:text="Title"
+        android:textAllCaps="false"
+        android:textColor="#6B4730"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/taskSelectidUserText3"
+        android:layout_width="134dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:text="Description"
+        android:textAllCaps="false"
+        android:textColor="#6B4730"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTaskTitle" />
+
+    <TextView
+        android:id="@+id/taskSelectidUserText2"
+        android:layout_width="134dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="108dp"
+        android:text="Select User"
+        android:textAllCaps="false"
+        android:textColor="#6B4730"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/taskEndDateText2"
+        android:layout_width="134dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="108dp"
+        android:text="Task End date"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#6B4730"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#674630"
+        android:text="@string/select_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createNewTaskText" />
+
+    <Spinner
+        android:id="@+id/userList"
+        android:layout_width="179dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="100dp"
+        android:background="#F8F8F8"
+        android:backgroundTint="#674630"
+        android:dropDownWidth="wrap_content"
+        android:dropDownSelector="@android:drawable/arrow_down_float"
+        android:foregroundTint="#00FFFFFF"
+        android:textColor="#00F40303"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/dateButton"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTaskGoBack"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="341dp"
+        android:layout_height="255dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskSelectidUserText3" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/createTaskTitle"
+        android:layout_width="338dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
